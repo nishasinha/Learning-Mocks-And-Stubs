@@ -1,4 +1,4 @@
-###Creating Java Stub class for testing
+### Creating Java Stub class for testing
 
 Looking at this commit, we can understand:
 
@@ -21,4 +21,22 @@ The problem is:
 - Dynamic behavior: the stub class is static, to get values based on
  scenarios, all the scenario logic should be added in stub class which makes 
  it complex.
+
+
+### Testing using Mockito
+
+Since there were issues in manually created stubbed class, there is 
+"mockito library" that allows creation of dependency class objects 
+dynamically and stub behaviour on them using when and 
+thenReturn methods.
+
+Look into class TodoBusinessImplMockitoTest.java, how it creates the 
+dependency object TodoService.
+
+So, 
+- mock allows creating dummy object.
+- all methods are available on mock object.
+- Unless specified they return default values, like empty list.
+- The behaviour can be stubbed using "when" and "thenReturn" methods.
+
 

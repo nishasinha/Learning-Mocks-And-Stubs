@@ -1,14 +1,14 @@
 package com.testing.business;
 
+import com.testing.data.api.TodoService;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.testing.data.api.TodoService;
 
 public class TodoBusinessImpl {
     private TodoService todoService;
 
-    TodoBusinessImpl(TodoService todoService) {
+    public TodoBusinessImpl(TodoService todoService) {
         this.todoService = todoService;
     }
 
