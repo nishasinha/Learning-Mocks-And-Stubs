@@ -37,6 +37,19 @@ So,
 - mock allows creating dummy object.
 - all methods are available on mock object.
 - Unless specified they return default values, like empty list.
+(NICE MOCK BEHAVIOUR, easy mock did not have this by default but mockito has.)
 - The behaviour can be stubbed using "when" and "thenReturn" methods.
 
 
+### Mockito Testing
+
+It can test any class in Java except:
+  - final classes
+  - anonymous classes
+  - primitive types
+  
+Also, when the parameter passed to any stubbed method is not defined, 
+we can use Argument Matchers from matchers like
+
+- anyInt() anyByte() anyObject() etc. 
+and then return the value expected.
