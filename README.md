@@ -1,4 +1,5 @@
-# Creating Java Stub class for testing
+### Please look at commits and corresponding updates in README to understand context.
+## Creating Java Stub class for testing
 
 Looking at this commit, we can understand:
 
@@ -23,7 +24,7 @@ The problem is:
  it complex.
 
 
-# Intro to testing using Mockito Library
+## Intro to testing using Mockito Library
 
 Since there were issues in manually created stubbed class, there is 
 "mockito library" that allows creation of dependency class objects 
@@ -41,7 +42,7 @@ So,
 - The behaviour can be stubbed using "when" and "thenReturn" methods.
 
 
-### Testing using Mockito
+## Testing using Mockito
 
 It can test any class in Java except:
   - final classes
